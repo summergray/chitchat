@@ -1,0 +1,46 @@
+<style>
+	.blue-text {
+		color: blue;
+	}
+	.orange-text {
+		color: orange;
+	}
+</style>
+<body>
+<h1 class="orange-text">Food Survey</h1>
+<h2 class="blue-text">
+<form action="https://formspree.io/graysummerstarr@gmail.com"> 
+<p><label for="question1">What is your favorite food?</label>
+<input type="text" name="question1" placeholder="Your answer?"></p>
+<p><label for="question2">What food do you like second-best?</label>
+<input type="text" name="question2" placeholder="Your answer?"></p>
+<p><label for="question3">Would you rather eat fried egg or fried ham?</label></p>
+<p><label> <input type="radio" name="Egg-Ham">Egg</label>
+<label> <input type="radio" name="Egg-Ham">Ham</label></p>
+<p><label for="question4">Choose three of your favorite drinks</label></p>
+<p><label> <input type="checkbox" name="drinks">Apple Juice</label>
+<label> <input type="checkbox" name="drinks">Orange Juice</label>
+<label> <input type="checkbox" name="drinks">Grape Juice</label>
+<label> <input type="checkbox" name="drinks">Watermelon Juice</label></p>
+<p><label for="question5">What is your third-favorite food?</label>
+<input type="text" name="question5" id="question5" placeholder="Your answer?"></p>
+<p><label for="question6">Would you rather eat ice cream or frozen yogurt?</label>
+<label> <input type="radio" name="Icecream-Yogurt">Icecream</label>
+<label> <input type="radio" name="Icecream-Yogurt">Frozen Yorgurt</label></p>
+<p> <label for="question7">Choose three of your favorite flavors</label></p>
+<p><label><input type="checkbox" name="Flavors">Vanilla</label>
+<label><input type="checkbox" name="Flavors">Chocolate</label>
+<label><input type="checkbox" name="Flavors">Strawberry</label>
+<label><input type="checkbox" name="Flavors">Chocolate Chip</label>
+<label><input type="checkbox" name="Flavors">Chocolate Chip Cookie Dough</label></form></p></h2>
+
+	<button onclick="myFunction()">Submit</button>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+function myFunction() {
+	var question5 = $("input#question5").val();
+    alert(question);
+}
+</script>
+</body>
